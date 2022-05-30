@@ -1,0 +1,101 @@
+h1 h2 h3 {
+  padding: 0;
+  margin: 0;
+}
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contImgHead {
+  background-image: url(https://images.unsplash.com/photo-1543701255-97ec8718c023?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1747);
+}
+.cont1Img {
+  background-image: url(https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234);
+}
+.cont2Img {
+  background-image: url(https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172);
+}
+.containerStyles {
+  display: flex;
+  justify-content: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  position: relative;
+  flex-direction: column;
+  padding: 8rem 5rem;
+  color: aliceblue;
+  z-index: 3;
+}
+.containerStyles:nth-child(even) {
+  flex: 2;
+}
+.containerStyles:nth-child(odd) {
+  flex: 1;
+}
+.rowCont:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.containerStyles::before {
+  content: "";
+  background-color: rgb(138, 206, 209);
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.containerStyles:hover::before {
+  display: none;
+}
+.botomLine {
+  border-bottom: solid whitesmoke;
+  padding-bottom: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  z-index: 99;
+}
+p {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 35%;
+}
+.headerSubtitle {
+  display: flex;
+  padding-top: 2rem;
+}
+.defaultBtn {
+  border: solid rgb(63, 220, 32);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(178, 26, 26);
+  transition: all 0.5s ease;
+}
+.defaultBtn:hover {
+  color: rgb(164, 213, 41);
+  border-color: rgb(11, 80, 178);
+}
+h2 {
+  display: inline-block;
+  width: fit-content;
+  font-size: 2rem;
+  padding-right: 3rem;
+}
+.rowCont {
+  display: flex;
+}
